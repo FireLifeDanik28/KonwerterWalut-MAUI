@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KonwerterWalut.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25"
+            x:Name="BgColor"
+            BackgroundColor="Transparent">
+            <Label
+                Text="PLN"/>
+            <Entry
+                x:Name="PlnEntry"
+                />
+            <Button
+                x:Name="ConvertBtn"
+                Text="Przelicz" 
+                SemanticProperties.Hint="Przelicz PLN na USD"
+                Clicked="OnConvertClicked"/>
+            <Label
+                Text="USD 0.28"/>
+            <RadioButton
+                x:Name="USDt"
+                CheckedChanged="USDrad"
+                />
+            <Label
+                Text="EUR 0.23"/>
+            <RadioButton
+                x:Name="EURt"
+                CheckedChanged="EURrad"
+                />
+            <Label
+                Text="Robux 16.66"/>
+            <RadioButton
+                x:Name="RBXt"
+                CheckedChanged="RBXrad"
+                />
+            <Label
+                Text="UAH 11.35"/>
+            <RadioButton
+                x:Name="UAHt"
+                CheckedChanged="USDrad"
+                />
+            <Entry
+                x:Name="OutEntry"
+                IsReadOnly="True"
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
