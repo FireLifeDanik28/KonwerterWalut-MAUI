@@ -19,30 +19,51 @@
                 Text="Przelicz" 
                 SemanticProperties.Hint="Przelicz PLN na USD"
                 Clicked="OnConvertClicked"/>
-            <Label
-                Text="USD 0.28"/>
-            <RadioButton
+            <HorizontalStackLayout>
+                <RadioButton
                 x:Name="USDt"
                 CheckedChanged="USDrad"
+                Content="USD"
+                IsChecked="True"
+                GroupName="currency"
                 />
-            <Label
-                Text="EUR 0.23"/>
+            <Entry
+                x:Name="c1"
+                Text="0,28"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
             <RadioButton
                 x:Name="EURt"
                 CheckedChanged="EURrad"
+                Content="EUR"
+                GroupName="currency"
                 />
-            <Label
-                Text="Robux 16.66"/>
-            <RadioButton
+            <Entry
+                x:Name="c2"
+                Text="0,23"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <RadioButton
                 x:Name="RBXt"
                 CheckedChanged="RBXrad"
+                Content="Robux"
+                GroupName="currency"
                 />
-            <Label
-                Text="UAH 11.35"/>
-            <RadioButton
+            <Entry
+                x:Name="c3"
+                Text="16,66"/>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout>
+                <RadioButton
                 x:Name="UAHt"
-                CheckedChanged="USDrad"
+                CheckedChanged="UAHrad"
+                Content="UAH"
+                GroupName="currency"
                 />
+                <Entry
+                x:Name="c4"
+                Text="11,35"/>
+            </HorizontalStackLayout>
             <Entry
                 x:Name="OutEntry"
                 IsReadOnly="True"
